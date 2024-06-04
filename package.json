@@ -1,0 +1,21 @@
+{
+  "name": "poc-code-mirror",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 8080 --host 127.0.0.1 --open",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@codemirror/lang-javascript": "^6.2.2",
+    "@codemirror/state": "^6.4.1",
+    "@codemirror/theme-one-dark": "^6.1.2",
+    "@codemirror/view": "^6.26.4",
+    "codemirror": "^6.0.1"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  }
+}

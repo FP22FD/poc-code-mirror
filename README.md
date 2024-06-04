@@ -1,2 +1,1 @@
-# poc-code-mirror
- 
+# POC for Code Mirror editor
