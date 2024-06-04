@@ -23,7 +23,7 @@ import "/style.css";
 const initialText = "function hello() {\n\talert('Hello world!');\n}";
 const targetElement = document.querySelector('#editor')
 
-new EditorView({
+const editor = new EditorView({
   parent: targetElement,
   state: EditorState.create({
     doc: initialText,
@@ -41,3 +41,8 @@ new EditorView({
     ],
   }),
 })
+
+document.querySelector('#btnReadValue').addEventListener('click', (ev) => {
+  const value = editor.state.doc.toString();
+  console.log({ value })
+});
